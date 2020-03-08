@@ -1,0 +1,115 @@
+/* CSS files add styling rules to your content */
+
+body{
+    background-color:black!important;
+    overflow:hidden;
+    font-family:  'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  
+}
+
+h1 {
+  color: rgba(255, 255, 255,1);
+  font-family: 'Dokdo', cursive;
+  font-size:80px;
+}
+
+
+.custom-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width:125px;
+    max-width: 150px;
+    margin: 1em;
+    text-align: center;
+    border-radius: 10px;
+    color:#FF9A56;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    position: relative;
+    display: inline-block;
+    -webkit-animation-name:risev2;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count: infinite; 
+}
+
+#timercard{
+  padding-top:35vh;
+}
+
+
+#days,#hours,#minutes,#seconds{
+    font-size:60px;
+}
+
+@-webkit-keyframes risev2{
+    0% {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);}
+    25%{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);}
+    50%{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);}
+    75%{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);}
+    100%{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);}
+}
+
+#postcompletion{
+  display:none;
+  padding-top:20vh;
+  padding-left:20%;
+}
+
+#postcompletion>img{
+margin-left:25%;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-bottom:1.5em;
+}
+
+footer>a{
+  color:pink;
+  text-decoration:none;
+  
+}
+footer>a:hover{
+
+  color:white;
+  text-decoration:none;
+}
+
+
+@media only screen and (max-width: 576px){
+  .custom-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width:64px;
+    height:auto;
+    max-width: 150px;
+    margin: 0.1em;
+    text-align: center;
+    border-radius: 10px;
+    color:#FF9A56;
+    background-color: #ffffff;
+    font-size:15px;
+  }
+  #days,#hours,#minutes,#seconds{
+    font-size:34px;
+  }
+  #postcompletion{
+  display:none;
+  padding-top:10vh;
+  padding-left:20%;
+}
+  h1 {
+  color: rgba(255, 255, 255,1);
+  font-family: 'Dokdo', cursive;
+  font-size:40px;
+}
+#postcompletion>img{
+  width:50%;
+  margin-left:10vw;
+}
+
+}
